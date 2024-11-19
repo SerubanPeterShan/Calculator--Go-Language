@@ -1,0 +1,71 @@
+# Calculator Package
+
+This is a simple calculator package that demonstrates basic Go testing practices.
+
+### Participant
+
+- Ashish Poudel
+- Ikecheku Samuel Madu
+- Nipuna Pamuditha Karunarathne
+- Seruban Peter Shan (500235797)
+
+
+## Package Contents
+
+- `calculator.go`: Contains the main package functions
+- `calculator_test.go`: Contains the test cases
+
+### Available Functions
+
+1. `Divide(a, b int) (int, error)`
+    - Performs integer division
+    - Returns error if division by zero is attempted
+
+2. `square(a int) int`
+    - Returns the square of a number
+    - Internal function (not exported)
+
+## Running Tests
+
+### On Mac/Linux:
+
+```powershell
+cd /path/to/project
+go test -v
+```
+
+### On Windows :
+
+```bash
+cd \path\to\project
+go test -v
+```
+
+## Why No main.go?
+
+We don't need a `main.go` file because:
+
+1. This is a package meant to be imported by other programs
+2. Go's testing framework provides its own entry point for tests
+3. The `go test` command automatically detects and runs test files
+
+## Test Coverage
+
+The test file includes:
+
+- Division test with valid input
+- Division by zero test
+- Square function test
+- (Commented) Addition test for future implementation
+
+To check test coverage:
+
+```bash
+go test -cover
+```
+
+## Notes
+
+- Files must be in the same directory
+- Test files must end with `_test.go`
+- Each test function must start with `Test`
