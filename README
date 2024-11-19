@@ -4,9 +4,9 @@ This is a simple calculator package that demonstrates basic Go testing practices
 
 ### Participant
 
-- Ashish Poudel
-- Ikecheku Samuel Madu
-- Nipuna Pamuditha Karunarathne
+- Ashish Poudel (500237600)
+- Ikechukwu Samuel Madu (500236443)
+- Nipuna Pamuditha Karunarathne (500238003)
 - Seruban Peter Shan (500235797)
 
 
@@ -49,7 +49,21 @@ We don't need a `main.go` file because:
 2. Go's testing framework provides its own entry point for tests
 3. The `go test` command automatically detects and runs test files
 
+
 ## Test Coverage
+
+Test coverage measures how much of your code is executed during testing. Our tests aim for high coverage by:
+
+- Testing normal operation cases
+- Testing edge cases (like division by zero)
+- Verifying error conditions
+- Testing internal functions
+
+Our current coverage includes:
+
+- Function calls with valid inputs
+- Error handling scenarios
+- Internal helper functions
 
 The test file includes:
 
@@ -63,6 +77,8 @@ To check test coverage:
 ```bash
 go test -cover
 ```
+
+## Benchmark
 
 ## Notes
 
