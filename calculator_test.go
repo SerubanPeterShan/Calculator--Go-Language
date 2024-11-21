@@ -1,6 +1,8 @@
 package calculator
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestDivide(t *testing.T) {
 	result, err := Divide(10, 2)
@@ -21,10 +23,14 @@ func TestSquare(t *testing.T) {
 	}
 }
 
-// func TestAdd(t *testing.T) {
-// 	result := Add(2, 3)
-// 	expected := 5
-// 	if result != expected {
-// 		t.Fatalf("Add(2, 3) will result %d, but we got %d", result, expected)
-// 	}
-// }
+func BenchmarkDivide(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		_, _ = Divide(10, 2)
+	}
+}
+
+func BenchmarkSquare(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		_ = square(10)
+	}
+}
