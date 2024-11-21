@@ -116,6 +116,7 @@ go test -bench=.
 ```powershell
 go test -bench .
 ```
+
 ### Example Benchmark Output
 
 ```powershell
@@ -152,9 +153,33 @@ The tests include unit tests for the `Divide` and `square` functions, as well as
 
 To run the benchmarks on macOS or Windows, use the following command in the terminal:
 
+<table>
+<tr>
+<th>Mac OS</th>
+<th>Windows</th>
+</tr>
+<tr>
+<td>
+  
 ```bash
+
 go test -bench=.
+
 ```
+  
+</td>
+<td>
+
+```powershell
+
+go test -bench .
+
+```
+
+</td>
+</tr>
+</table>
+
 
 This command will execute all benchmark functions in the package and provide performance metrics.
 
