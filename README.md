@@ -65,25 +65,31 @@ When we want to test our pieces, Go has a special helper (called go test) that:
 
 ## Test Coverage
 
-Test coverage measures how much of your code is executed during testing. Our tests aim for high coverage by:
+Imagine you have a coloring book 📚. Test coverage is like checking how much of the book you've colored in!
 
-- Testing normal operation cases
-- Testing edge cases (like division by zero)
-- Verifying error conditions
-- Testing internal functions
+### What's Test Coverage? 🎨
 
-Our current coverage includes:
+Just like making sure you color inside all the lines, test coverage helps us make sure we've tested all parts of our code. It's like a checklist for our program!
 
-- Function calls with valid inputs
-- Error handling scenarios
-- Internal helper functions
+### What Do We Test? ✅
 
-The test file includes:
+We check lots of things, like:
 
-- Division test with valid input
-- Division by zero test
-- Square function test
-- (Commented) Addition test for future implementation
+- Normal everyday stuff (like 2 ÷ 2)
+- Tricky situations (like trying to divide by zero - oops!)
+- Making sure errors get caught (like when someone makes a mistake)
+- Secret helper functions that work behind the scenes
+
+### Our Test Checklist 📝
+
+We make sure to test:
+
+- ➗ Division with normal numbers
+- ❌ What happens when we try to divide by zero
+- ² Finding the square of numbers
+- 💭 We've left space to test addition later (it's like saving a page to color later!)
+
+Remember: Good testing is like double-checking your homework before turning it in! 🌟
 
 To check test coverage:
 
